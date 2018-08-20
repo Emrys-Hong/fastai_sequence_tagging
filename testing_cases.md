@@ -1,5 +1,6 @@
 
-prefix /fs-object-detection/paperspace/fastai/courses/coNLL/data/nlp_seq/ner/; cuda_id 0; lm_id ; clas_id None; bs 64; cl 1; ```backwards False; dropmult 1.0 unfreeze True startat 0; pretrain True; bpe False; use_clr True;use_regular_schedule False; use_discriminative True; last False;chain_thaw True; from_scratch True; train_file_id 
+prefix /fs-object-detection/paperspace/fastai/courses/coNLL/data/nlp_seq/ner/; cuda_id 0; lm_id ; clas_id None; bs 64; cl 1; ```
+backwards False; dropmult 1.0 unfreeze True startat 0; pretrain True; bpe False; use_clr True;use_regular_schedule False; use_discriminative True; last False;chain_thaw True; from_scratch True; train_file_id 
 Train sentences shape: (14988,)
 Train labels shape: (14988,)
 Token ids: ['xbos', '-docstart-']
