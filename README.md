@@ -2,10 +2,11 @@
 sequence tagging for NER for ULMFiT
 
 ## data
-you can download the models from [here](https://www.dropbox.com/sh/tw1phbbj0mvhtwd/AADL09ugrCHozYz99knO5Nnoa?dl=0), and put it in ```data/coNLL/models ```
+to replicate result:
+you can download the ```data/``` folder from [here](https://www.dropbox.com/sh/z308tqyqrvakl66/AADsiYKx3vfNZ3LQGInz0Q-qa?dl=0), and put it in root directory.
 
-## run the file
-run ```CUDA_VISIBLE_DEVICES=0 python train.py data/coNLL/```
+## run training
+I am currently doing experiments in jupyter notebook ```coNLL_three_layer.ipynb```
 
 ## relevant papers
 [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/pdf/1708.02182.pdf)
@@ -16,5 +17,7 @@ run ```CUDA_VISIBLE_DEVICES=0 python train.py data/coNLL/```
 
 [Semi-supervised sequence tagging with bidirectional language models](https://arxiv.org/abs/1705.00108)
 
-## acknowledgements
-the library is built on [pytorch](https://pytorch.org/) and [fastai](www.fast.ai), used seqdataloader from [Sebastian Ruder](http://ruder.io/) and CRF layer from [Ye-Zhixiu's repo](https://github.com/ZhixiuYe/NER-pytorch).
+[Contextual String Embeddings for Sequence Labeling](http://alanakbik.github.io/papers/coling2018.pdf)
+
+## results
+F1 score of 80. (need to improve..)
