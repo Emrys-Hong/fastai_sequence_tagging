@@ -2,7 +2,7 @@ import numpy as np
 import torch
 
 from sklearn.metrics import accuracy_score
-from create_toks_conll import PAD, BOS_LABEL
+from .create_toks_conll import PAD, BOS_LABEL
 
 from allennlp.training.metrics import SpanBasedF1Measure
 from allennlp.data.vocabulary import Vocabulary

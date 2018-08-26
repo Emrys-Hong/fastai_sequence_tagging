@@ -33,13 +33,16 @@ def read_file(filepath):
     return sentences, labels
 
 
-def create_toks(max_vocab=30000, min_freq=1):
-    PATH = f'data/coNLL/'
+def create_toks(prefix, max_vocab=30000, min_freq=1):
+    PATH = f'data/nlp_seq/{prefix}/'
 
     names = {}
-    names['train'] = 'train.txt'
-    names['val'] = 'valid.txt'
-    names['test'] = 'test.txt'
+    if prefix == 'ner':
+        names['train'] = 'train.txt'
+        names['val'] = 'valid.txt'
+        names['test'] = 'test.txt'
+    else:
+        raise ValueError(f'Filenames for {prefix} have to be added first.')
     paths = {}
     for split in ['train', 'val', 'test']:
         paths[split] = f'{PATH}{names[split]}'
